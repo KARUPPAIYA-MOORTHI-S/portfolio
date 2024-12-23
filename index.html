@@ -3,351 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karuppaiya Moorthi S Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="icon" href="data:image/png;base64,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">
     <style>
         /* Styling for the loading screen */
         #loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color:black; /* Light gray background */
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color:black; /* Light gray background */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: Arial, sans-serif;
+                    color: #333;
+                    z-index: 1000;
+                }
+        
+                #loading img {
+                    max-width: 100%; /* Adjust the image size */
+                    height: 500%;
+                    margin-bottom: 20px;
+                }
+        #awards{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            color: #333;
-            z-index: 1000;
+            justify-content: space-between;
+        }
+        #other-skills{
+        color: black;    
+        }
+        #education{
+            color: black;
+            background-color: transparent;
+        }
+        #education li:hover{
+            display: flex;
+            color: white;
+            background-color: black;
+            
+        }
+        #profile{
+            display: flex;
+            justify-content: space-between;
+            text-align: justify;
+            padding-left: 4%;
+            color: black;
+            background-image: linear-gradient(rgb(243, 238, 238));
+            
+        }
+            #technical-skills{
+            display: flex;
+            padding-bottom: 5%;
+            color:black;
+            justify-content: space-between;
+            background-image:linear-gradient(white);
+            
+        
+        }
+            #projects{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+
+            #contacts a{
+            text-decoration: none;
+            padding-right:4%;
+            padding-left: 3%;
+            color: #ddd;
+            background-color:black;
+            border-radius: 10px;
+        }
+            #contacts a:hover{
+            text-decoration: none;
+            padding-right:4%;
+            padding-left: 3%;
+            color: hsl(0, 54%, 3%);
+            background-color:#fffdfd;
+            border-radius: 10px;
         }
 
-        #loading img {
-            max-width: 100%; /* Adjust the image size */
-            height: 500%;
-            margin-bottom: 20px;
-        }
-
-        /* Hides the main content initially */
+       
         body {
-          font-family: Arial, sans-serif;
-          margin: 1%;
-          padding: 1%;
-          width: auto;
-          height: auto;
-          background-color: transparent;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:linear-gradient( white,rgb(255,255,255),rgb(221,245,255),rgb(91,208,254),rgb(174, 232, 255));
         }
         body:hover{
-          background-color: white;
+            background-image: linear-gradient(rgb(174, 232, 255), rgb(91, 208, 254),rgb(221, 245, 255),rgb(255, 255, 255),white);
         }
-  
-        .container{
-          width: auto;
-          margin: 50px;
-      
-          background:white;
-  
-          padding-bottom: 100px;
-          padding-left: 150px;
-          padding-right: 150px;
-          padding-top: 100px;
-  
-          box-shadow: 0px 5px 20px 30px rgba(0.1, 0.1, 0.1, 0.1);
-          border-radius: 12px;
-          text-align: justify;
-          
-          background-color: transparent;
-          
-          transform: translate(20px,20px);
+        nav {
+            background-color: #333;
+            overflow: hidden;
         }
-  
-        nav{
-          border-radius: 12px;
-          height: auto;
-          width: auto;
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
         }
-  
-        header {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          margin-bottom: 20px;
+        nav li {
+            float: left;
         }
-  
-        header h1, header h2{
-          font-size: 2.5rem;
-          margin: 0;
-          padding-left: 50px;
-          padding-right: 50px;
-          padding-top: 20px;
-          
-          
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
-  
-        header h2 {
-          font-size: 1.5rem;
-          color: #666;
-  
+        nav a:hover {
+            background-color: white;
+            color: black;
         }
-  
-        .objective {
-          font-size: 1rem;
-          color: black;
-          margin-top: 35px;
-          margin-right: 5px;
-          line-height: 1.5;
-          padding-right:50px;
-          text-align: justify;
-          max-width: 40%;
-          
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
-  
-  
-        main {
-          display: flex;
-          justify-content: space-between;
-        }
-  
-        .left-section,
-        .right-section {
-          width: 48%;
-          padding-left: 15px;
-          
-        }
-  
-        .section {
-          margin-bottom: 20px;
-        }
-  
-        .section h3 {
-          font-size: 1.2rem;
-          margin-bottom: 10px;
-          text-transform: uppercase;
-          border-bottom: 2px solid #000;
-          display: inline-block;
-        }
-  
-        .section ul {
-          list-style-type: none;
-          padding: 0;
-          margin: 0;
-        }
-  
-        .section ul li {
-          margin-bottom: 8px;
-          line-height: 1.6;
-        }
-        .hd{
-          padding-left: 15px;
-        }
-  
+    
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
 
 </head>
 <body>
-    <!-- Loading Screen -->
     <div id="loading">
         <img src="https://i.pinimg.com/originals/8b/35/72/8b357283fd26e3bb18cc1983c0ebdb9c.gif" alt="Loading Image">
         <p></p><!-- loading -->
     </div>
 
-  <!-- main page -->
-<br/>
-<div class="container">
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">RESUME</a>
-          <!-- portfolio -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">PORTFOLIO</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    PROJECTS
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="https://karuppaiya-moorthi-s.github.io/boc-hord/" target="_blank">Boc-hord</a></li>
-                    <li><a class="dropdown-item" href="https://karuppaiya-moorthi-s.github.io/makeup-kits-site/" target="_blank">Bellezza Beauty</a></li>
-                    <li><a class="dropdown-item" href="https://karuppaiya-moorthi-s.github.io/is-mini-project/" target="_blank">Encrypt - Decrypt</a></li>
-                    <!-- <li>
-                      <hr class="dropdown-divider">
-                    </li> -->
-                    <!-- <li><a class="dropdown-item" href="#">Contact</a></li> -->
-                  </ul>
-                
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    TECHNICAL SKILLS
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EU4_OxwBlE2oifFA7qd2eLU8Uh2CPl47/view?usp=drivesdk" target="_blank">C Language</a></li>
-                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/17B1HzKjtJZqA_w2b1VeCj5ZC8ttFWkjk/view?usp=drivesdk" target="_blank">Web Development</a></li>
-                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1V_SVMEyvOAfAOAYFsMIQr5wDpAeuYh3o/view?usp=drivesdk" target="_blank">Python</a></li>
-                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/17LeOvr9pZ_l-B8eCcubwDeF8KlgcAGDU/view?usp=drivesdk" target="_blank">Java</a></li>
-                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1M02O4L0lz5u8h8KvTai3_ODOl65qJGIb/view?usp=drivesdk" target="_blank">Using AI Tools for UX Design</a></li>
-                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1MGlz2YQQtIDRVFtcPjvalGbHqhzmgpoU/view?usp=drivesdk" target="_blank">UI/UX for Beginners</a></li>
-                    <!-- <li>
-                      <hr class="dropdown-divider">
-                    </li> -->
-                    <!-- <li><a class="dropdown-item" href="#">Contact</a></li> -->
-                  </ul>
-                
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li> -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    INPLANT TRAINING & INTERNSHIP 
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EYZ51rp6pHSMkjTvgjVBgcWT2OLG5JtD/view?usp=drivesdk" target="_blank">C CUBE TECHNOLOGY | Dec 2022 - Jan 2023</a></li>
-                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EWMCst174b7nDhoeLgA_Xpk3Ca3vbXRi/view?usp=drivesdk" target="_blank">TRONSTRIDE FZC | January 2023</a></li>
-                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1Es_DADGNNpQvVmPxxoBTCLW4F1hKH9rz/view?usp=drivesdk" target="_blank">IDM TECHPARK | June 2023 - July 2023</a></li>
-                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1F5y4CqMNkcvAcxOcYmOZofDil4oLKHlC/view?usp=drivesdk" target="_blank">NURTURE INFOTECH | January 2024</a></li>
-                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EfU7z8MPwFegCPHsb5JLzWCpOrnFA8Tb/view?usp=drivesdk" target="_blank">IPCS GLOBAL | August - September 2024</a></li>
-                    <!-- <li>
-                      <hr class="dropdown-divider">
-                    </li> -->
-                    <!-- <li><a class="dropdown-item" href="#">Contact</a></li> -->
-                  </ul>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      AWARDS AND HONOR
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="https://drive.google.com/file/d/1FP7ChYLMXLkoXWJ_rlK1LSvXTXkvzLMd/view?usp=drivesdk" target="_blank">Web Design Competition</a></li>
-                      <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EtF8QE3ZoqM5frj5MtsJey_-L_epG1Gf/view?usp=drivesdk" target="_blank">Best Student Award - 2023</a></li>
-                      <li><a class="dropdown-item" href="https://drive.google.com/file/d/1FXBaypFNOv1w7TJFz4LufcbxzDbPUbfR/view?usp=drivesdk" target="_blank">Engineers Day competition</a></li>
-                      <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EXozzK5u9j5IcpjFkAquxVydxO-vjtPH/view?usp=drivesdk" target="_blank">Blind Coding</a></li>
-                      <!-- <li>
-                        <hr class="dropdown-divider">
-                      </li> -->
-                      <!-- <li><a class="dropdown-item" href="#">Contact</a></li> -->
-                    </ul>
-                  
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    CONTACT
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="https://wa.me/6382408136"><sub><i class="fa-brands fa-whatsapp"></i> whatsapp</sub></a></li>
-                    
-                    <li><a class="dropdown-item" href="https://mailto:karuppaiyamoorthi001@gmail.com"><sub><i class="fa-regular fa-envelope"></i> e-mail</sub></a></li>
-                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/karuppaiya-moorthi-s-530833259"><sub><i class="fa-brands fa-linkedin"></i> LinkedIn</sub></a></li>
-                    <li><a class="dropdown-item" href="https://github.com/KARUPPAIYA-MOORTHI-S"><sub><i class="fa-brands fa-github"></i> GitHub</sub></a></li>
-                    <li><a class="dropdown-item" href="tel:+916382408136"><sup><i class="fa-solid fa-phone"></i> phone</sub></a></li>
-                    <!-- <li>
-                      <hr class="dropdown-divider">
-                    </li> -->
-                    <!-- <li><a class="dropdown-item" href="#">Contact</a></li> -->
-                  </ul>
-                
-              </ul>
-              <!-- <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-              </form> -->
-            </div>
-          </div>
-        </div>
-      </nav>
-    <header class="hd">
-        <p class="objective">
-            <b>OBJECTIVE</b><br/>
-            As a student and beginner, my main focus is on learning and understanding new concepts. I'm passionate about acquiring and expanding my skills in various fields. I'm also an NCC candidate with a certificate, demonstrating my commitment to discipline, leadership, and teamwork.
-        </p>
-        <div>
-            <h1>KARUPPAIYA MOORTHI S</h1>
-            <h2 style="color: #000;">B TECH - IT</h2>
-        </div>
-    </header>
-    <main>
-        <section class="left-section">
-            <div class="section">
-                <h3>EDUCATION</h3>
-                <p><strong>AL - AMEEN ENGINEERING COLLEGE</strong><br>B.Tech-IT 2021 - 2025</p>
-            </div>
-            <div class="section">
-                <h3>TECHNICAL SKILLS</h3>
-                <ul>
-                    <li>C Language</li>
-                    <li>Web Development</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>Using AI Tools for UX Design</li>
-                    <li>UI/UX for Beginners</li>
-                    <li>MySQL</li>
-                </ul>
-            </div>
-            <div class="section">
-                <h3>OTHER SKILLS</h3>
-                <ul>
-                    <li>Team Management</li>
-                    <li>Supervision</li>
-                    <li>Time Management</li>
-                </ul>
-            </div>
-            <div class="section">
-                <h3>PROJECTS</h3>
-                <ul>
-                    <li><strong>Boc-hord:</strong> College Website Model</li>
-                    <li><strong>BELLEZZA BEAUTY:</strong> Makeup Kits Site</li>
-                    <li><strong>Encrypt-Decrypt:</strong> Enc & Dec Msg </li>
-                </ul>
-            </div>
-            <div class="section">
-                <h3>LANGUAGES</h3>
-                <ul>
-                    <li>Tamil</li>
-                    <li>English</li>
-                </ul>
-            </div>
-        </section>
-        <section class="right-section">
-            <div class="section">
-                <h3>INPLANT TRAINING</h3>
-                <ul>
-                    <li>C CUBE TECHNOLOGY | Dec 2022 - Jan 2023</li>
-                    <li>TRONSTRIDE FZC | January 2023</li>
-                    <li>IDM TECHPARK | June 2023 - July 2023</li>
-                    <li>NURTURE INFOTECH | January 2024</li>
-                    <li>IPCS GLOBAL | August - September 2024</li>
-                </ul>
-            </div>
-            <div class="section">
-                <h3>AWARDS AND HONOR</h3>
-                <ul>
-                    <li>Dr.N.G.P. Institute of Technology<br>Web Design Competition - Second Prize</li>
-                    <li>AL-Ameen Engineering College <br>Best Student Award - 2023</li>
-                    <li>Engineers Day competition - First Prize</li>
-                    <li>Rathinam Group of Institutions<br>Blind Coding - Second Prize</li>
-                </ul>
-            </div>
-            <div class="section">
-                <h3>CONTACT</h3>
-                <ul>
-                    <li><strong>GitHub:</strong> KARUPPAIYA-MOORTHI-S</li>
-                    <li><strong>Phone Number:</strong> +91 6382408136</li>
-                    <li><strong>E-mail:</strong> karuppaiyamoorthi001@gmail.com</li>
-                    <li><strong>LinkedIn:</strong> @Karuppaiya Moorthi.S</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-</div>
+    <nav>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#technical-skills">Technical Skills</a></li>
+            <!-- <li><a href="#other-skills">Other Skills</a></li> -->
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#internships">In-Plant Training & Internships</a></li>
+            <li><a href="#awards">Awards and Honors</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
 
+    <section id="profile">
+        <table>
+        <th><img src="https://media.licdn.com/dms/image/v2/D5603AQEGjwQ_18fcKg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710986759468?e=2147483647&v=beta&t=Jgp97LNeFoyYZUjyvbW8-vsGLBx1ctT3W7Vig0gm0NY" alt="" height="220px" width="200px" style="border-radius: 50px;"></th>
+        <th>
+        <h2 style="padding-left: 1.5%;">KARUPPAIYA MOORTHI S</h2>
+        <h3 style="padding-left: 1.5%;">OBJECTIVE</h3>
+        <p style="padding-left: 1.5%;">As a student and beginner, my main focus is on learning and understanding new concepts. I'm passionate about acquiring and expanding my skills in various fields. I'm also an NCC candidate with a certificate, demonstrating my commitment to discipline, leadership, and teamwork.</p>
+        </th>
+    </table>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        
+        <p><B>Al-Ameen Engineering College : B.Tech/IT </B><br>
+        <ul><li>CGPA : 8.2 %</li></ul></p>
+        <p><B>Arulneri Thirupanimandram Higher Secondary School : 12th & 11th </B><br>
+        <ul><li>+2 Mark : 330 out of 500</li><br>
+        <li>Percentage : 55 %</li><br>
+        <li>+1 Mark : 333 out of 500</li><br>
+        <li>Percentage : 55.5 %</li></ul></p>
+        <p><B>Mahajana High School : 10th </B><br>
+        <ul><li>Mark : 436 out of 500</li><br>
+        <li>Percentage : 87.2 %</li></ul></p>
+        
+    </section>
+
+    <section id="technical-skills">
+        <h2>TECHNICAL SKILLS</h2><br>
+        <marquee behavior="slide" direction="right">
+        <a href="https://drive.google.com/file/d/1EU4_OxwBlE2oifFA7qd2eLU8Uh2CPl47/view?usp=drivesdk"><img src="https://www.shutterstock.com/image-vector/c-language-logo-simple-colours-600nw-2113921046.jpg" alt="" width="150px" height="150px"></a>
+        <a href="https://drive.google.com/file/d/17B1HzKjtJZqA_w2b1VeCj5ZC8ttFWkjk/view?usp=drivesdk"><img src="https://thumbs.dreamstime.com/b/web-development-icon-trendy-flat-vector-white-background-programming-collection-illustration-can-be-use-mobile-eps-130326341.jpg" alt="" width="150px" height="150px"></a>
+        <a href="https://drive.google.com/file/d/1V_SVMEyvOAfAOAYFsMIQr5wDpAeuYh3o/view?usp=drivesdk"><img src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=1920%2C1920&ssl=1" alt="" width="150px" height="150px"></a>
+        <a href="https://drive.google.com/file/d/17LeOvr9pZ_l-B8eCcubwDeF8KlgcAGDU/view?usp=drivesdk"><img src="https://contentstatic.techgig.com/photo/83117460.cms" alt="" width="150px" height="150px"></a>
+        <a href="https://drive.google.com/file/d/1M02O4L0lz5u8h8KvTai3_ODOl65qJGIb/view?usp=drivesdk"><img src="https://static.vecteezy.com/system/resources/previews/016/878/155/non_2x/ui-ux-design-outline-icon-design-illustration-design-and-development-symbol-on-white-background-eps-10-file-vector.jpg" alt="https://drive.google.com/file/d/17LeOvr9pZ_l-B8eCcubwDeF8KlgcAGDU/view?usp=drivesdk" width="150px" height="150px"></a>
+        </marquee>
+        
+    </section>
+
+    <!-- <section id="other-skills">
+        <h2>Other Skills</h2>
+        <ul>
+            <li>Team Management</li>
+            <li>Supervision</li>
+        </ul>
+    </section> -->
+
+    <section id="projects">
+            
+        <h2>Projects</h2>
+            <marquee behavior="slide" direction="left">
+            <table>
+                <th> Boc-hord 🔗          <br><a href="https://karuppaiya-moorthi-s.github.io/boc-hord/" target="_blank">        <img src="https://cdn-icons-gif.flaticon.com/12749/12749751.gif" alt="" width="170px" height="170px" style="border-radius: 50%;"></a></th>
+                <th> Bellezza Beauty 🔗   <br><a href="https://karuppaiya-moorthi-s.github.io/makeup-kits-site/" target="_blank"><img src="https://cdn-icons-gif.flaticon.com/12749/12749751.gif" alt="" width="170px" height="170px" style="border-radius: 50%;"></a></th>
+                <th> Encrypt - Decrypt 🔗 <br><a href="https://karuppaiya-moorthi-s.github.io/is-mini-project/" target="_blank"> <img src="https://cdn-icons-gif.flaticon.com/12749/12749751.gif" alt="" width="170px" height="170px" style="border-radius: 50%;"></a></th>
+            </table>
+            </marquee>
+    
+    </section>
+
+    <section id="internships">
+        <h2>In-Plant Training & Internships</h2>
+        <table>
+            
+            <th><marquee behavior="alternative" direction="up"><h3>C CUBE TECHNOLOGY <a href="https://drive.google.com/file/d/1EYZ51rp6pHSMkjTvgjVBgcWT2OLG5JtD/view?usp=drivesdk" target="_blank"><img src="https://designmodo.com/wp-content/uploads/2015/09/icon_gif.gif" alt="" width="140px" height="140px" style="border-radius: 55%;"></h3></marquee></th>
+            <th><marquee behavior="alternative" direction="down"><h3>TRONSTRIDE FZC    <a href="https://drive.google.com/file/d/1EWMCst174b7nDhoeLgA_Xpk3Ca3vbXRi/view?usp=drivesdk" target="_blank"><img src="https://designmodo.com/wp-content/uploads/2015/09/icon_gif.gif" alt="" width="140px" height="140px" style="border-radius: 55%;"></h3></marquee></th>           
+            <th><marquee behavior="alternative" direction="up"><h3>IDM TECHPARK      <a href="https://drive.google.com/file/d/1Es_DADGNNpQvVmPxxoBTCLW4F1hKH9rz/view?usp=drivesdk" target="_blank"><img src="https://designmodo.com/wp-content/uploads/2015/09/icon_gif.gif" alt="" width="140px" height="140px" style="border-radius: 55%;"></h3></marquee></th>
+            <th><marquee behavior="alternative" direction="down"><h3>NURTURE INFOTECH  <a href="https://drive.google.com/file/d/1F5y4CqMNkcvAcxOcYmOZofDil4oLKHlC/view?usp=drivesdk" target="_blank"><img src="https://designmodo.com/wp-content/uploads/2015/09/icon_gif.gif" alt="" width="140px" height="140px" style="border-radius: 55%;"></h3></marquee></th>
+            <th><marquee behavior="alternative" direction="up"><h3>IPCS GLOBAL       <a href="https://drive.google.com/file/d/1EfU7z8MPwFegCPHsb5JLzWCpOrnFA8Tb/view?usp=drivesdk" target="_blank"><img src="https://designmodo.com/wp-content/uploads/2015/09/icon_gif.gif" alt="" width="140px" height="140px" style="border-radius: 55%;"></h3></marquee></th>
+            
+    </table>
+    </section>
+
+    <section id="awards">
+        <h2>Awards & Honors</h2><ul>
+       <table>
+              <th><h3>Dr.N.G.P.Institute Of Technology </h3><a href="https://drive.google.com/file/d/1FP7ChYLMXLkoXWJ_rlK1LSvXTXkvzLMd/view?usp=drivesdk" target="_blank"><img src="https://cdn-icons-gif.flaticon.com/17490/17490068.gif" alt="" width="80px" height="80px"></a></th>
+              <th><h3>Al-Ameen Engineering College     </h3><a href="https://drive.google.com/file/d/1EtF8QE3ZoqM5frj5MtsJey_-L_epG1Gf/view?usp=drivesdk" target="_blank"><img src="https://cdn-icons-gif.flaticon.com/17490/17490068.gif" alt="" width="80px" height="80px"></a></th>
+              <th><h3>Al-Ameen Engineering College     </h3><a href="https://drive.google.com/file/d/1FXBaypFNOv1w7TJFz4LufcbxzDbPUbfR/view?usp=drivesdk" target="_blank"><img src="https://cdn-icons-gif.flaticon.com/17490/17490068.gif" alt="" width="80px" height="80px"></a></th>
+              <th><h3>Rathinam Group Of Institution    </h3><a href="https://drive.google.com/file/d/1EXozzK5u9j5IcpjFkAquxVydxO-vjtPH/view?usp=drivesdk" target="_blank"><img src="https://cdn-icons-gif.flaticon.com/17490/17490068.gif" alt="" width="80px" height="80px"></a></th>
+        </table></ul> 
+    </section>
+
+    <section id="contacts">
+        <strong style="padding-left: 14%;">Contacts : </strong>
+        <a href="https://wa.me/6382408136"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+        <a href="https://mailto:karuppaiyamoorthi001@gmail.com"><i class="fa-regular fa-envelope"></i>E-mail</a>
+        <a href="https://www.linkedin.com/in/karuppaiya-moorthi-s-530833259">Linked<i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/KARUPPAIYA-MOORTHI-S"><i class="fa-brands fa-github"></i>GitHub</a>
+        <a href="tel:+916382408136"><i class="fa-solid fa-phone"></i>Phone</a>
+    </section>
 
     <script>
         // Simulate loading screen for 5 seconds
