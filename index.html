@@ -1,257 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8HCAoAAAD8/PwFBggKCw35+fkHCAwMDQ/29vYICAjd3d3u7u7i4uLq6urn5+d8fHxYWFiurq5ycnL+/vu/v79PT0/W1tbLy8svLy81NTVAQEBcXFyrq6sWFhafn5+GhoaXl5coKChra2tGRkYdHR1ubm5jY2PQ0NDBwcEhISE6OjqOjo6BgYG2trZ3d3fVfqd2AAAQaklEQVR4nO1dC3uqPAyGtAW5eN03L/M2LztuTt3//3df0oKCAoKW4Xh895ztbGPQl7ZpkiapYTzxxBNPPPHEE088EQVT/xiT//Gbntf21S/wJ+z8YmYw9TO/7XlNn6mfGeFPHxLUNmbhZ6vV++mOR8vl23jS6bUt44Jf8B5Y69CZjN+Wy9G4+zPFC/Ej4W08DKhpyKY970MM/V77kiN+7/fOLlzP20E/VtH8HJDtau5mANwUpqBP3EQAfLy3L65tL7YAdAFdh8CLAWYdLxzmDwls2BT5uQ3bFrZtmxy/mKZtuwCjxdm18ze80Kar6D3I620XLxTzSpp+FUzCGGCzzUQAfH8aQTfjhZ/j9AuXQxrvD9eRJDaM3gzc5HZT02fTY5t7Hyn85IXmFKfzwxFkjmF0cAKmM8QRuHfkq7D2WdcJzuGFhHLVnM5gGU4HhJIZyWhg7/SRouF0QX6XTlHAi1M1oXMw6kESGhkUUZrAxDGsDdjCtNOv45Ji1YyisOQc7GTMrBNg3Fznu/BFTkTrEWajXOWNKWT0XqR/YMvzXIcU54+kwDHjCzKGXYwiz8dQcHh9FNWGmuFswcyagqeGi7zXCbB94zFUVFqa3yFXu1Xj812F0qbzGASpEUPIObmKgcbpf1XTM6Sk6ecSj8UZflsPwdBgh3xytDAETI2HYOiMyxmk2Ikj5yEYvpbUhaTK9irmpvwv3dIYoiJrVS1O8fGDGfCyKIL7Wa1LQyqkO8iwE+6EgHejWiuKXu+2LDlDnh4Ao2K/FDOa4KZbs/eBm64Lg0oVcJI083JW+4CiCecerF9miB8/JTJEwKpql5Sfz6C9neH3uaf1d4HTsFGWnAkpehWLmgGYpa2GiuGwSnrkIi13kEpvRoVdiI/elc7wvdJRWrooJWFaMcNN6Qy71dGTmJTOsF8lPRw93XozNGrPkNV+lCJefkOWVgjpCy6ZYadagsb0N3SaSvXSYekMq96gaZbmwwgZepXyM1jru2T7cNSu2J3orEpmOKl2Rx9f7wJk+FM5ECbsjKqDwIYFtg5vAAqaKiGd+iWPUnIIV+lNLNt+Qp2NVcqQPh2gLGcUTnC1+VSxNMX1oqyJKGDUrJacQqe8Rf8xQqOYV540pV2LBwDblLbLPXmQAMXStrnhUDW1EF3t41RwgfrMumopegSZUFyr6kY7BRy78EEYMvYPskNLb6HIYZWYqFENmmUEK1S+6xQBM/bahY2Af6U3m5TO/wjJpNTn4CX7mhUbbsJby4g8IzlM8aiz3uTKYVaY9MAcf3CY7/adTud90Ru2HSv2aIkDCJ0UUZBOT6+SBQ2xnPawt3jHdux3i8PAd+5jGKZ/DKeb73h60qy7ODSD+wZ3tnSbGNANbx3muDUPi+4s3pC3zXRoKXq3qAb0N/7wZ2SCymMylbiUQS4AH+OF50QHT3OrkyL/8I7dgl8db77+gLAhQqjWcPrJ8mXo3yyRHJmExk3bxkfiJ/yQoFQCunl3evShYHO0ek5lHHvIz+pN6HG2zKFSDQibQplSsF74BVgx9YEt9t4hLTcpeM/4+84gbAZjP+DqWTO4kDEmQZiJbEemNoG/3w+ClDcrx4xUWYT+nEbdVTUFPjafVpA36rhgahE3DQA/SLVgg80WcgTOwQf2o8zuvD5gmYx3fH2DHIu44Bw7svsVyJxX4LYO1U2qazKNY0jD03Sv3BSVWOzH0Ws4AnN0ob8HmcOUo0dQQ0aOQxZEgOnoQgELtUZ8bgBcYV4PZ6E+xo7/8fNJHMtojpGgm1vPtG2AF1o9GNOxZAiyCvF1tX+Qn+uiWBPXs1WEiZfCt3c9/5R+/ZotYJKAY/W9hX/sqBiwe3pSwJjyuv3dFfGSBCCDMiM3k6mcv0Pjlo7gMCZzdbDFIXOzuCHvOZ8NsB2H9U1+AyDfXHoyuBKiveI9aKosHjlUP0lA3SxuhIryogF603tCwTfNEjYBwZu6gJNz8wNVgOk9SwYahXODHbYgbrsHvehphg+ZlnnImaJ1eXOZB/viUxzY7UsGvBsOSRjTvOk9kesDPlPTFv8zWHN5nzDEofqltvZFQfVG8YGOMaQF/h5RBR8DIyXVBn96p7SnhDN4Z6s82tD5n5JGDSscAdnZxDkAXZaaTHS/8kzaRd/rQOE+xCUbrfpm994eRNg4l1P6sHXTOhEDNQ6Wryu4YdcUNl8j2fv3an4Aabsd7xn1AnJDjtT5prgHFbpzkuN5s0wzWuDCT7IcHcxy5uheBYdVt3C7+itdmwNoJg8TVBsKb9Ln04X1mJtmvrWfS4v6u6/Ll0Wy4CXBc8MsjT5PfMZ2VOB9cb5canNlCVJtkjwbPa2bD4I3GvlvJxoNvS7li/j3MPlF22Oo/E6Re6HGfYc6e3YvkyIaLxMX26OyI9R+E7BtXgzTQZ0IojT/vFgrSk8N+V3AZTGmfc0YnsU44IgtOQLvtwGTixWx9KD73wWsL0ZpSZUfqkICw7r1Yf9stWDGv5ox3FzMw9LTCn4X0LnQaQ5lJ4P+ImiP86yihvSyVd0unbAvIuJY6UnZvwv4bl0692s1ERNziUrPfvlNJAfAj+RmXXk4GoAlCzTaX5glETSmOlxteYAyu9w6BW6CZUFwypY1ykvMuWaPxeVj4DslOOOrvHJIElwQOfxXcjJYeuQtW+WtfngbBIxHwPmof+v+Vj5wmKTsAluGX66vhgMV5wPbuxZccTukF2rbStk/DMsDlpamBSuf/HlQnpaPIkyY8JW+QWqxHvDS6loBDAY008FoljYbGg0Kakyt60pe00V5cwT2JMtwmLIS64Vwqg6WEaqA/VhacTJotJVDDxzmz8qiCHvrarTpXMVB6OxIuf5RSKwMmoK2tNW0h03TM4JwqivouTgZtYob+fC1H1SzgSajitfaJzzKGHeaI1oYO9n7Bq41plmqiuSElvYLmm5Mutg1C21caQc5ikcztUmjdwipAt0sqNcDXyq6X/c4bcAqX7w3o0miF0LAsk1hb+R2FjK2krV0axfClQtFDn4o0nWv+a6rNEVZb14EUfiv+ssRclrsr/di6027JHdhI9+tL93OgWmDWrB2aw1GaQpbpA9ZvvLxxR7caMoH+2PJcKda0c46AuLWJ/27vloMQXv9AB7uOavhgbqNSkWZap8OIkfKotPXvxZD1wl6TYbNwU+YB6M90R1F2jojM0G637S/V+ECtIKYz+aMbh6WumCGD9pdQ5zKgabppTIsU//cEGqMSoZSVYJ+eM5VCe8Tzc/0RZ/JpVC73g0rJ0wSUMVsgqw0Cu+3XnQ7TrjIqJBNGSf6S0DAsnUcNJ5kyGfN8HmGo39pkpMgtRv1VwxSybzBMqz2RrgsGyTTW5hm9UKF4XqpBJX9q/eB4eInEUS0wPCYecdKqG8jS9qkQetGMJonDblQHCmGDE852qirbu6JC09CVg07584w7zhsysduG5FJETI81nem8du6OXg+BbBNyw5ibKDXudCgs2Kip299BgxPAa6UAPGluQ9dN70w76teXZhqxsfy5UKG3ZC1kjY7vUuGm1ri7T99kV+CtihcihaIPSFk+B07XYUZaGVo9AyF5lkSw6lWP+Yx3/yC4dIxYgydsdbZkbLzpBjqCtMl13ljcG6OBgz5zIulCzDDW96Sv5CGDIbaRimFw8LXRTB5yBBN8Wgf4lW0naBtVVSpT4kMDzpj2RNKyQUMaUGM9SHTq2tkaKbDjGMJc4PGmusmKhZhREuS33YRuG3uH6ouOfNSoMmvINAmTDzA8Mjw58LCYc6LFKgaGMIstVwmM3TINLRfyKpP8nkdGa4vbTiy+PUIG3hL7UKmJVCYtNF+K9HMDk0XPrvoYZyL/gS07PBnlkDTEFNDGSu2n7T/w04ML1OvZMmCrRYfUUbVWnyNa7ij3hPpJRzn4DjNGaT8NGZqRUu/r8TNPWm2ZvrjJRa3pNUdb0/LvAtvqZUA2+EBlimnx7D2GNzGHdJGkDmzyzDxcaAAv70TBW2YXepqEYbhXkXqVGmt7xM3qBBDZmWFO/efUVBAN+GU8RB+KKvptLGkxzOjNbkzwwvtmdS9C1nbwr/LNSRUNFLiA1jk2B14Szwfh1omXdK3c4Rlm2VUVSAMabLzm+YCajKdzN0tZ6KEJXZ1upHK3qW4KT5YUc657vWqvEzmyhbPI5O6Guyyt2BPzsqMyquMzWVZh8KvmFMLLsO7Lx9g9W+Y7EJWbbpyWiFjwTkDKA72WS2RpTkKM6Sd5rWTo8QQa69JtyjYibwBo4GRfV74SWfiUrNKcRdZjHnFy7+RWwG+23mKKEnvV/EhAqvW9TCBwCPDcTilb5+QnPBfihYgoWCIuGcvC7gqycmei6ctbG7DLNd5mvNgAnAZmpHZlsMHCCrplWcsBQbbuEDRYVyVZI2hnKcTA/QvPBYJoCRHEf7J1MiiSMnzVF8h5xHXxBD6BU5oY8zaQf4KKgA7dr18EeEUoyuFXpbuwUiFDErhXWeIL3lf5MhSuv3XKOd2N8DGO22+ZOOUtiL3ajP6UH40V7lmI9lrstJXEYakP+2vVmqiExjx3lagD127Kyo1R/OIB8ELqS1Qu31UVc2+9qZxndq3M4onpTeo+aOq7uF8F7KkoGIlqwrSm7OpsmCRE3uZcapqkLcK8mEC4FK9L/n4wJ9rqwpgqlkA/9L30660x2qutqojwzcfGRkmFcH8Knj6xKl6Sh7tQ8L5mnwAHEueCKlvhZkbOP8+Np5VZIBGCdJftaddWUiTu1Q7TWlzshwjdt+8WWjsE06OIBjnbQZaznNZGlKZxyR88KurSl/2p2Gd0eJgQXkQy5/+9LfxwqHL9c/BtzJroyXf8hThneERi0FpEZZ/6PRH8UZs+z9T/77DIfAvgyq7jjfs7f5119/f68m/xWFIpUuDyrDFbr84ekncnBPx9BSnOTwsXibUiO6/XU82Ivhd1aexRnA4BtDw3BMxHXp5MXXLO9/WMCJM33LYAcnNiP3nweBFavGmVnP602hFvOqpm2B/G8dDBtAK3lTdmFJwCiEXsAwjh2qFU5laGQtaXJl8eJx2RoSqe1A3gkb7aK8IzqG4yvD4cLbHDFKZR1c7MCuae1jtCZzlIB6SIJ37dRulxmvUL5Ge7vlnwQxvFvFJJFRzqgGi+U7wcT3H5e/hX9S/VT/dlBnx0DLoV3vMaCnwIn3IH+XsOH2IbgSrTkwqiPungaIzkhwn6LzfqpukFyovJ7oXkZWn9Ffhx/YiYFY7gsx4i9iIXEivYp0oMrKCQ6+8TPRKjmP8q5C7cMP4ntYpSag2sOJ1NhPKVP55xEPLeA0tDC82TDl06zQRJeLD1OaPc2asJtDRVxGGoo76d/vsKEFKhq7Vuk87pdEMq2thr38OjLF4yDwqNp16dSGTkaYRgnLFqBGYjP86RTvJ0/3yxE3+JTBjFs9XFbBXMUL14TmPp3AHLv46Lf1nZyQLAaNWriMo/w7OE1Zd6NeL4HlJDMqMzlVO7g9hCK5t09msFAosI8n6zTpNRGQyoTLwdOQOBeDBaP/p10118+iYbRUFOF58UYRaetXKPwgZhzxefizH3c6hZR3J1YghcXG8gdc6flunDnziiSeeeOKJJ57Qi/8Bt4rrB4YRkY4AAAAASUVORK5CYII=">
-    <style>
-        /* Styling for the loading screen */
-        #loading {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color:black; /* Light gray background */
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: Arial, sans-serif;
-                    color: #333;
-                    z-index: 1000;
-                }
-        
-                #loading img {
-                    max-width: 100%; /* Adjust the image size */
-                    height: 500%;
-                    margin-bottom: 20px;
-                }
-        #awards{
-            display: flex;
-            justify-content: space-between;
-        }
-        #other-skills{
-        color: black;    
-        }
-        #education{
-            color: black;
-            background-color: transparent;
-        }
-        #education li:hover{
-            display: flex;
-            color: white;
-            background-color: black;
-            
-        }
-        #profile{
-            display: flex;
-            justify-content: space-between;
-            text-align: justify;
-            padding-left: 4%;
-            color: black;
-            background-image: linear-gradient(rgb(243, 238, 238));
-            
-        }
-            #technical-skills{
-            display: flex;
-            padding-bottom: 5%;
-            color:black;
-            justify-content: space-between;
-            background-image:linear-gradient(white);
-            
-        
-        }
-            #projects{
-            display: flex;
-            justify-content: space-between;
-        }
-        
-
-            #contacts a{
-            text-decoration: none;
-            padding-right:4%;
-            padding-left: 3%;
-            color: #ddd;
-            background-color:black;
-            border-radius: 10px;
-        }
-            #contacts a:hover{
-            text-decoration: none;
-            padding-right:4%;
-            padding-left: 3%;
-            color: hsl(0, 54%, 3%);
-            background-color:#fffdfd;
-            border-radius: 10px;
-        }
-
-       
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image:linear-gradient( white,rgb(255,255,255),rgb(221,245,255),rgb(91,208,254),rgb(174, 232, 255));
-        }
-        body:hover{
-            background-image: linear-gradient(rgb(174, 232, 255), rgb(91, 208, 254),rgb(221, 245, 255),rgb(255, 255, 255),white);
-        }
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-        }
-        nav li {
-            float: left;
-        }
-        nav a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: white;
-            color: black;
-        }
-        section {
-            padding: 20px;
-            margin: 20px 0;
-            border: 1px solid #ddd;
-        }
-    
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karuppaiya Moorthi S – Portfolio</title>
+  <link rel="icon" href="data:image/png;base64,..." />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-...==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #fff, #dbf5ff, #5dd0fe, #aee8ff);
+      color: #222;
+      line-height: 1.6;
+    }
+    /* Loading screen */
+    #loading {
+      position: fixed;
+      inset: 0;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #loading img { width: 150px; height: 150px; }
+    /* Navigation */
+    nav {
+      background: #333;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    nav li { margin: 5px 10px; }
+    nav a {
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: block;
+      transition: background .3s, color .3s;
+    }
+    nav a:hover { background: #fff; color: #000; }
+    /* Sections */
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { margin-bottom: 20px; text-align: center; color: #333; }
+    /* Profile */
+    .profile-container {
+      display: flex; flex-wrap: wrap; gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile-img {
+      width: 200px; height: 220px; border-radius: 20px;
+      object-fit: cover;
+    }
+    .profile-text {
+      max-width: 600px; text-align: justify;
+    }
+    /* Education */
+    .edu-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 8px;
+    }
+    .edu-item h3 { margin-bottom: 10px; }
+    /* Skills & Projects */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .grid a {
+      display: block;
+      width: 150px;
+      height: 150px;
+    }
+    .grid img {
+      width: 100%; height: 100%; object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .grid img:hover { transform: scale(1.05); }
+    /* Internships & Awards */
+    .card-grid {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      justify-items: center;
+    }
+    .card {
+      text-align: center;
+      background: rgba(255,255,255,0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .card h3 { margin: 15px 0 10px; }
+    /* Contacts */
+    #contacts {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+    }
+    #contacts a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 1.2em;
+      transition: color .3s;
+    }
+    #contacts a:hover { color: #5dd0fe; }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .profile-container { flex-direction: column; }
+      nav ul { flex-direction: column; }
+    }
+  </style>
 </head>
 <body>
-    <div id="loading">
-        <img src="https://i.pinimg.com/originals/8b/35/72/8b357283fd26e3bb18cc1983c0ebdb9c.gif" alt="Loading Image">
-        <p></p><!-- loading -->
-    </div>
+  <div id="loading">
+    <img src="https://i.pinimg.com/originals/8b/35/72/8b357283fd26e3bb18cc1983c0ebdb9c.gif" alt="Loading..." />
+  </div>
 
-    <nav>
-        <ul>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#technical-skills">Technical Skills</a></li>
-            <!-- <li><a href="#other-skills">Other Skills</a></li> -->
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#internships">In-Plant Training & Internships</a></li>
-            <li><a href="#awards">Awards and Honors</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#technical-skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+    </ul>
+  </nav>
 
+  <main id="main-content" style="display: none;">
     <section id="profile">
-        <table>
-        <th><img src="https://media.licdn.com/dms/image/v2/D5603AQEGjwQ_18fcKg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710986759468?e=2147483647&v=beta&t=Jgp97LNeFoyYZUjyvbW8-vsGLBx1ctT3W7Vig0gm0NY" alt="" height="220px" width="200px" style="border-radius: 50px;"></th>
-        <th>
-        <h2 style="padding-left: 1.5%;">KARUPPAIYA MOORTHI S</h2>
-        <h3 style="padding-left: 1.5%;">OBJECTIVE</h3>
-        <p style="padding-left: 1.5%;">As a student and beginner, my main focus is on learning and understanding new concepts. I'm passionate about acquiring and expanding my skills in various fields. I'm also an NCC candidate with a certificate, demonstrating my commitment to discipline, leadership, and teamwork.</p>
-        </th>
-    </table>
+      <h2>Profile</h2>
+      <div class="profile-container">
+        <img src="https://media.licdn.com/..." alt="Me" class="profile-img"/>
+        <div class="profile-text">
+          <h2>KARUPPAIYA MOORTHI S</h2>
+          <h3>Objective</h3>
+          <p>I’m a dedicated student passionate about learning new concepts and expanding my skillset. As an NCC candidate, I’ve developed discipline, leadership, and teamwork abilities.</p>
+        </div>
+      </div>
     </section>
 
     <section id="education">
-        <h2>Education</h2>
-        
-        <p><B>Al-Ameen Engineering College : B.Tech IT </B><br>
-        <ul><li>CGPA : 8.2 %</li></ul></p>
-        <p><B>Arulneri Thirupanimandram Higher Secondary School : 12th & 11th </B><br>
-        <ul><li>+2 Mark : 330 out of 500</li><br>
-        <li>Percentage : 55 %</li><br>
-        <li>+1 Mark : 333 out of 500</li><br>
-        <li>Percentage : 55.5 %</li></ul></p>
-        <p><B>Mahajana High School : 10th </B><br>
-        <ul><li>Mark : 436 out of 500</li><br>
-        <li>Percentage : 87.2 %</li></ul></p>
-        
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h3>Al‑Ameen Engineering College</h3>
+        <p><strong>B.Tech IT</strong> – CGPA: 8.2</p>
+      </div>
+      <div class="edu-item">
+        <h3>Arulneri Thirupanimandram HSS</h3>
+        <p>+2: 330/500 (55%) | +1: 333/500 (55.5%)</p>
+      </div>
+      <div class="edu-item">
+        <h3>Mahajana High School</h3>
+        <p>10th: 436/500 (87.2%)</p>
+      </div>
     </section>
 
     <section id="technical-skills">
-        <h2>TECHNICAL SKILLS</h2><br>
-        <marquee behavior="slide" direction="right">
-        <a href="https://drive.google.com/file/d/1EU4_OxwBlE2oifFA7qd2eLU8Uh2CPl47/view?usp=drivesdk"><img src="https://www.shutterstock.com/image-vector/c-language-logo-simple-colours-600nw-2113921046.jpg" alt="" width="150px" height="150px"></a>
-        <a href="https://drive.google.com/file/d/17B1HzKjtJZqA_w2b1VeCj5ZC8ttFWkjk/view?usp=drivesdk"><img src="https://thumbs.dreamstime.com/b/web-development-icon-trendy-flat-vector-white-background-programming-collection-illustration-can-be-use-mobile-eps-130326341.jpg" alt="" width="150px" height="150px"></a>
-        <a href="https://drive.google.com/file/d/1V_SVMEyvOAfAOAYFsMIQr5wDpAeuYh3o/view?usp=drivesdk"><img src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=1920%2C1920&ssl=1" alt="" width="150px" height="150px"></a>
-        <a href="https://drive.google.com/file/d/17LeOvr9pZ_l-B8eCcubwDeF8KlgcAGDU/view?usp=drivesdk"><img src="https://contentstatic.techgig.com/photo/83117460.cms" alt="" width="150px" height="150px"></a>
-        <a href="https://drive.google.com/file/d/1M02O4L0lz5u8h8KvTai3_ODOl65qJGIb/view?usp=drivesdk"><img src="https://static.vecteezy.com/system/resources/previews/016/878/155/non_2x/ui-ux-design-outline-icon-design-illustration-design-and-development-symbol-on-white-background-eps-10-file-vector.jpg" alt="https://drive.google.com/file/d/17LeOvr9pZ_l-B8eCcubwDeF8KlgcAGDU/view?usp=drivesdk" width="150px" height="150px"></a>
-        <a href="https://drive.google.com/file/d/1eAipRLOqPmrz1E4fsbSu1vD3tohX4Qfa/view?usp=drivesdk"><img src="https://gotrialpro.com/wp-content/uploads/edd/2024/08/Coreldraw-free-trial.png" alt="https://gotrialpro.com/wp-content/uploads/edd/2024/08/Coreldraw-free-trial.png" width="200px" height="150px"></a>
-        </marquee>
-        
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <a href="#" target="_blank"><img src="c-logo.jpg" alt="C Language" /></a>
+        <a href="#" target="_blank"><img src="web-dev.jpg" alt="Web Dev" /></a>
+        <a href="#" target="_blank"><img src="python-logo.webp" alt="Python" /></a>
+        <a href="#" target="_blank"><img src="cpp-logo.jpg" alt="C++" /></a>
+        <a href="#" target="_blank"><img src="ui-ux.jpg" alt="UI/UX" /></a>
+        <a href="#" target="_blank"><img src="coreldraw.png" alt="CorelDRAW" /></a>
+      </div>
     </section>
 
-    <!-- <section id="other-skills">
-        <h2>Other Skills</h2>
-        <ul>
-            <li>Team Management</li>
-            <li>Supervision</li>
-        </ul>
-    </section> -->
-
     <section id="projects">
-            
-        <h2>Projects</h2>
-            <marquee behavior="slide" direction="left">
-            <table>
-                <th> Boc-hord 🔗          <br><a href="https://karuppaiya-moorthi-s.github.io/boc-hord/" target="_blank">        <img src="https://cdn-icons-gif.flaticon.com/12749/12749751.gif" alt="" width="170px" height="170px" style="border-radius: 50%;"></a></th>
-                <th> Bellezza Beauty 🔗   <br><a href="https://karuppaiya-moorthi-s.github.io/makeup-kits-site/" target="_blank"><img src="https://cdn-icons-gif.flaticon.com/12749/12749751.gif" alt="" width="170px" height="170px" style="border-radius: 50%;"></a></th>
-                <th> Encrypt - Decrypt 🔗 <br><a href="https://karuppaiya-moorthi-s.github.io/is-mini-project/" target="_blank"> <img src="https://cdn-icons-gif.flaticon.com/12749/12749751.gif" alt="" width="170px" height="170px" style="border-radius: 50%;"></a></th>
-                <th> Support Ticketing System 🔗 <br><a href="https://support.shanmugadiabeticclinic.com/login" target="_blank"> <img src="https://cdn-icons-gif.flaticon.com/12749/12749751.gif" alt="" width="170px" height="170px" style="border-radius: 50%;"></a></th>
-            </table>
-            </marquee>
-    
+      <h2>Projects</h2>
+      <div class="grid">
+        <a href="#" target="_blank"><img src="project1.gif" alt="Boc-hord Project"/></a>
+        <a href="#" target="_blank"><img src="project2.gif" alt="Bellezza Beauty"/></a>
+        <a href="#" target="_blank"><img src="project3.gif" alt="Encrypt‑Decrypt"/></a>
+        <a href="#" target="_blank"><img src="project4.gif" alt="Support Ticket System"/></a>
+      </div>
     </section>
 
     <section id="internships">
-        <h2>In-Plant Training & Internships</h2>
-        <table>
-            
-            <th><marquee behavior="alternative" direction="up"><h3>C CUBE TECHNOLOGY <a href="https://drive.google.com/file/d/1EYZ51rp6pHSMkjTvgjVBgcWT2OLG5JtD/view?usp=drivesdk" target="_blank"><img src="https://designmodo.com/wp-content/uploads/2015/09/icon_gif.gif" alt="" width="140px" height="140px" style="border-radius: 55%;"></h3></marquee></th>
-            <th><marquee behavior="alternative" direction="down"><h3>TRONSTRIDE FZC    <a href="https://drive.google.com/file/d/1EWMCst174b7nDhoeLgA_Xpk3Ca3vbXRi/view?usp=drivesdk" target="_blank"><img src="https://designmodo.com/wp-content/uploads/2015/09/icon_gif.gif" alt="" width="140px" height="140px" style="border-radius: 55%;"></h3></marquee></th>           
-            <th><marquee behavior="alternative" direction="up"><h3>IDM TECHPARK      <a href="https://drive.google.com/file/d/1Es_DADGNNpQvVmPxxoBTCLW4F1hKH9rz/view?usp=drivesdk" target="_blank"><img src="https://designmodo.com/wp-content/uploads/2015/09/icon_gif.gif" alt="" width="140px" height="140px" style="border-radius: 55%;"></h3></marquee></th>
-            <th><marquee behavior="alternative" direction="down"><h3>NURTURE INFOTECH  <a href="https://drive.google.com/file/d/1F5y4CqMNkcvAcxOcYmOZofDil4oLKHlC/view?usp=drivesdk" target="_blank"><img src="https://designmodo.com/wp-content/uploads/2015/09/icon_gif.gif" alt="" width="140px" height="140px" style="border-radius: 55%;"></h3></marquee></th>
-            <th><marquee behavior="alternative" direction="up"><h3>IPCS GLOBAL       <a href="https://drive.google.com/file/d/1EfU7z8MPwFegCPHsb5JLzWCpOrnFA8Tb/view?usp=drivesdk" target="_blank"><img src="https://designmodo.com/wp-content/uploads/2015/09/icon_gif.gif" alt="" width="140px" height="140px" style="border-radius: 55%;"></h3></marquee></th>
-            <th><marquee behavior="alternative" direction="up"><h3>Q-GATE INFOTECH <a href="https://drive.google.com/file/d/1UnUf80fZXUTBw3YSS-SSJrfwe6v6-2qq/view?usp=drivesdk" target="_blank"><img src="https://designmodo.com/wp-content/uploads/2015/09/icon_gif.gif" alt="" width="140px" height="140px" style="border-radius: 55%;"></h3></marquee></th>
-            
-    </table>
+      <h2>Internships & Trainings</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="ccube.gif" alt="C Cube Tech"/>
+          <h3>C Cube Technology</h3>
+        </div>
+        <div class="card">
+          <img src="tronstride.gif" alt="Tronstride FZC"/>
+          <h3>Tronstride FZC</h3>
+        </div>
+        <div class="card">
+          <img src="idm.gif" alt="IDM Techpark"/>
+          <h3>IDM Techpark</h3>
+        </div>
+        <div class="card">
+          <img src="nurture.gif" alt="Nurture Infotech"/>
+          <h3>Nurture Infotech</h3>
+        </div>
+        <div class="card">
+          <img src="ipcs.gif" alt="IPCS Global"/>
+          <h3>IPCS Global</h3>
+        </div>
+        <div class="card">
+          <img src="qgate.gif" alt="Q‑Gate Infotech"/>
+          <h3>Q‑Gate Infotech</h3>
+        </div>
+      </div>
     </section>
 
     <section id="awards">
-        <h2>Awards & Honors</h2><ul>
-       <table>
-              <th><h3>Dr.N.G.P.Institute Of Technology </h3><a href="https://drive.google.com/file/d/1FP7ChYLMXLkoXWJ_rlK1LSvXTXkvzLMd/view?usp=drivesdk" target="_blank"><img src="https://cdn-icons-gif.flaticon.com/17490/17490068.gif" alt="" width="80px" height="80px"></a></th>
-              <th><h3>Al-Ameen Engineering College     </h3><a href="https://drive.google.com/file/d/1EtF8QE3ZoqM5frj5MtsJey_-L_epG1Gf/view?usp=drivesdk" target="_blank"><img src="https://cdn-icons-gif.flaticon.com/17490/17490068.gif" alt="" width="80px" height="80px"></a></th>
-              <th><h3>Al-Ameen Engineering College     </h3><a href="https://drive.google.com/file/d/1FXBaypFNOv1w7TJFz4LufcbxzDbPUbfR/view?usp=drivesdk" target="_blank"><img src="https://cdn-icons-gif.flaticon.com/17490/17490068.gif" alt="" width="80px" height="80px"></a></th>
-              <th><h3>Rathinam Group Of Institution    </h3><a href="https://drive.google.com/file/d/1EXozzK5u9j5IcpjFkAquxVydxO-vjtPH/view?usp=drivesdk" target="_blank"><img src="https://cdn-icons-gif.flaticon.com/17490/17490068.gif" alt="" width="80px" height="80px"></a></th>
-        </table></ul> 
+      <h2>Awards & Honors</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="award1.gif" alt="Dr NGP"/>
+          <h3>Dr. N.G.P. Institute</h3>
+        </div>
+        <div class="card">
+          <img src="award2.gif" alt="Al-Ameen 1"/>
+          <h3>Al‑Ameen Engineering College</h3>
+        </div>
+        <div class="card">
+          <img src="award3.gif" alt="Al‑Ameen 2"/>
+          <h3>Al‑Ameen Engineering College</h3>
+        </div>
+        <div class="card">
+          <img src="award4.gif" alt="Rathinam"/>
+          <h3>Rathinam Group of Institutions</h3>
+        </div>
+      </div>
     </section>
 
     <section id="contacts">
-        <strong style="padding-left: 14%;">Contacts : </strong>
-        <a href="https://wa.me/6382408136"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
-        <a href="https://mailto:karuppaiyamoorthi001@gmail.com"><i class="fa-regular fa-envelope"></i>E-mail</a>
-        <a href="https://www.linkedin.com/in/karuppaiya-moorthi-s-530833259">Linked<i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/KARUPPAIYA-MOORTHI-S"><i class="fa-brands fa-github"></i>GitHub</a>
-        <a href="tel:+916382408136"><i class="fa-solid fa-phone"></i>Phone</a>
+      <h2>Contact Me</h2>
+      <a href="https://wa.me/6382408136"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="mailto:karuppaiyamoorthi001@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/..."><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/..."><i class="fa-brands fa-github"></i></a>
+      <a href="tel:+916382408136"><i class="fa-solid fa-phone"></i></a>
     </section>
+  </main>
 
-    <script>
-        // Simulate loading screen for 5 seconds
-        setTimeout(() => {
-            document.getElementById('loading').style.display = 'none'; // Hide loading screen
-            document.getElementById('main-content').style.display = 'block'; // Show main content
-        }, 6100); // 6100 milliseconds = 6 seconds
-    </script>
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loading');
+      const main = document.getElementById('main-content');
+      setTimeout(() => {
+        loader.style.display = 'none';
+        main.style.display = 'block';
+      }, 2000); // Simulate 2-second loading
+    });
+  </script>
 </body>
 </html>
+
